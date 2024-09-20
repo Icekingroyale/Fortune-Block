@@ -1,0 +1,12 @@
+.certified-container{
+    /* border: 2px solid red; */
+    width: 100%;
+    background-image: url(../assets/bg/bg-7.jpg);
+    /* background-color: blue; */
+    img{
+        /* border: 2px solid green; */
+        width: 100%;
+
+    }
+    
+}

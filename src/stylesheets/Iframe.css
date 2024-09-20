@@ -1,0 +1,17 @@
+.Iframe-container{
+    /* border: 2px solid red; */
+    
+    /* background-image: url('../assets/bg/bg-5.jpg'); */
+
+    .coin-price{
+        border: 2px solid green;
+        height: 300px;
+        
+    }
+
+
+    img{
+        width: 100%;
+    }
+    
+}

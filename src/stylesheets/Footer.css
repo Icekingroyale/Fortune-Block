@@ -1,0 +1,66 @@
+.footer-container{
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: rgb(173, 173, 173);
+    
+
+    hr{
+        opacity: 0.4
+    }
+
+    div{
+        width: 250px;
+        /* border: 1px solid red; */
+        
+        /* margin: auto 100px; */
+        
+    }
+    
+    .outro{
+        color: rgb(173, 173, 173);
+        font-size: small;
+        display: flex;
+        gap: 20px;
+        font-size: 12px;
+        line-height: 18px;
+        /* border: 2px solid red; */
+        
+        img{
+            width: 40px;
+            height: 40px;
+            margin: 20px auto;
+        }
+    }
+    
+    
+    .office{
+        display: flex;
+        .location{
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            line-height: 22px;
+            /* border: 2px solid red; */
+            
+            a{
+                margin-left: 0;
+            };
+        }
+
+        img{
+            width: 15px;
+            height: 15px;
+            
+            
+        }
+
+    }
+
+    
+
+    
+    
+}

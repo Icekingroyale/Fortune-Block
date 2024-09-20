@@ -1,0 +1,68 @@
+[
+    {
+      "title": "STARTER",
+      "rate": "10%",
+      "time": "After 6 Hours",
+      "items": [
+        "MIN-INVEST: $50",
+        "MAX-INVEST: $499",
+        "24/7 Customer Support",
+        "Fast Cashout"
+      ]
+    },
+    {
+      "title": "LEADER",
+      "rate": "20%",
+      "time": "After 12 Hours",
+      "items": [
+        "MIN INVEST: $500",
+        "MAX INVEST: $2999",
+        "24/7 Customer Support",
+        "Fast Cashout"
+      ]
+    },
+    {
+      "title": "EMERALD",
+      "rate": "40%",
+      "time": "After 24 Hours",
+      "items": [
+        "MIN INVEST: $3000",
+        "MAX INVEST: $8999",
+        "24/7 Customer Support",
+        "Fast Cashout"
+      ]
+    },
+    {
+      "title": "RUBY",
+      "rate": "60%",
+      "time": "After 48 Hours",
+      "items": [
+        "MIN INVEST: $9000",
+        "MAX INVEST: $14999",
+        "24/7 Customer Support",
+        "Fast Cashout"
+      ]
+    },
+    {
+      "title": "MASTER",
+      "rate": "90%",
+      "time": "After 72 Hours",
+      "items": [
+        "MIN-INVEST: $15000",
+        "MAX-INVEST: $UNLIMITED",
+        "24/7 Customer Support",
+        "Fast Cashout"
+      ]
+    },
+    {
+      "title": "SAPPHIRE",
+      "rate": "100%",
+      "time": "Daily for 4 Weeks",
+      "items": [
+        "MIN-INVEST: $20,000",
+        "MAX-INVEST: $UNLIMITED",
+        "24/7 Customer Support",
+        "Fast Cashout"
+      ]
+    }
+  ]

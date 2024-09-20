@@ -1,0 +1,61 @@
+.plans-container{
+    border: 1px solid;
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 100px;
+    background-color: rgb(20, 20, 20);
+    padding: 24px;
+    
+
+
+    h6{
+        color: #dd9104;
+        opacity: 0.6;
+    }
+    
+    
+    h2{
+
+        font-size: x-large;
+        span{
+            font-size: xx-small;
+        }
+    }
+
+
+    hr{
+        opacity: 0.5;
+        margin: 10px 0;
+    }
+
+    li{
+        font-size: small;
+        line-height: 25px;
+        
+    }
+    
+    button{
+        background-color: rgb(214, 75, 75);
+    }
+
+    button:hover{
+        background-color: black
+    }
+
+}
+
+.plans-header{
+    padding: 10px;
+}
+
+    
+
+/* 
+@media screen and (max-width: 625px) {
+    .plans-container{
+        width: 100px;
+        border: 2px solid blue;
+        
+    }
+    
+} */
