@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5173/ -->
+<html lang="en" nighteye="disabled"><style id="mobile-simulator" data-extension-id="auto-viewport-zoom">
+        html {
+            zoom: 100% !important;
+        }</style><style id="mobile-simulator">
+            ::-webkit-scrollbar {
+                background: transparent;
+                width: 0 !important;
+                height: 0 !important;
+            }</style><style id="mobile-simulator">
+            *:not(.simulator) {
+                cursor: url(chrome-extension://ckejmhbmlajgoklhgbapkiccekfoccmk/assets/pictos/cursor.png) 17 17, pointer !important;
+                scrollbar-width: none;
+            }</style><style id="mobile-simulator">
+        .mf-hide-element {
+            display: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+        }</style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="module">
+import RefreshRuntime from "/@react-refresh"
+RefreshRuntime.injectIntoGlobalHook(window)
+window.$RefreshReg$ = () => {}
+window.$RefreshSig$ = () => (type) => type
+window.__vite_plugin_react_preamble_installed__ = true
+</script>
+
+    <script type="module" src="./client"></script>
+
+    
+    <link rel="icon" href="./favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FortuneBlock</title>
+  <style type="text/css" data-vite-dev-id="C:/Users/ICEKING/Desktop/VS-CODE/MY-WEB/Investor/src/App.css">*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body, #root{
+  /* background: linear-gradient(180deg, #05050e 0%, #645127 100%); */
+  /* background-image: url(./assets/bg/bg-5.jpg); */
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+.home{
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+a{
+  text-decoration: none;
+  color: white;
+
+}
+
+
+
+
+</style><style type="text/css" data-vite-dev-id="C:/Users/ICEKING/Desktop/VS-CODE/MY-WEB/Investor/src/stylesheets/Header.css">.header-container{
+    display: flex;
+    width: 99%;
+    padding: 10px 20px;
+    padding-bottom: 5px;
+    /* border: 2px solid green;  */
+    position: fixed;
+    z-index: 1000;
+    backface-visibility: hidden;
+    background-color: black;
+    overflow: hidden;
+    font-size: 14px;
+  }
+  
+  .header-container .menu{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    /* border: 2px solid red; */
+    margin: 10px auto;
+  }
+  
+  a{
+    margin: 12px;
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+    /* padding: 20px auto; */
+  }
+  
+  a:hover{
+    color: #dd9104;
+  }
+  
+  
+  .logo{
+    width: 45px;
+    /* border: 2px solid red; */
+    transition: 0.5s ease;
+  }
+
+  .logo:hover{
+    transform: scale(1.2);
+
+  }
+
+
+  button{
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    /* background: linear-gradient(#dd9104 0%, #000000 100%); */
+    transition: 0.1s ease-in-out;
+    background-color: #dd9104;
+  }
+  
+  button:hover{
+    /* background: linear-gradient(#000000 0%, #dd9104 100%); */
+    background-color: black;
+    border: 1px solid;
+    border-color:#dd9104;
+
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+    .header-container{
+      display: flex;
+      width: 100%;
+      padding: 10px 20px;
+      padding-bottom: 5px;
+      /* border: 2px solid green;  */
+      position: fixed;
+      z-index: 1000;
+      backface-visibility: hidden;
+      background-color: black;
+      overflow: hidden;
+      font-size: 14px;
+    }
+    
+    .header-container .menu{
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      /* border: 2px solid red; */
+      margin: 10px auto;
+    }
+    
+    a{
+      margin: 12px;
+      color: white;
+      transition: 0.5s ease;
+      cursor: pointer;
+      /* padding: 20px auto; */
+    }
+    
+    a:hover{
+      color: #dd9104;
+    }
+    
+    
+    .logo{
+      width: 45px;
+      /* border: 2px solid red; */
+      transition: 0.5s ease;
+    }
+  
+    .logo:hover{
+      transform: scale(1.2);
+  
+    }
+  
+  
+    button{
+      color: white;
+      border-radius: 20px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      /* background: linear-gradient(#dd9104 0%, #000000 100%); */
+      transition: 0.1s ease-in-out;
+      background-color: #dd9104;
+    }
+    
+    button:hover{
+      /* background: linear-gradient(#000000 0%, #dd9104 100%); */
+      background-color: black;
+      border: 1px solid;
+      border-color:#dd9104;
+  
+    }
+  
+  
+
+
+    
+
+
+  }
+</style><style type="text/css" data-vite-dev-id="C:/Users/ICEKING/Desktop/VS-CODE/MY-WEB/Investor/src/stylesheets/HeroSection.css">
+
+.hero-section-container{
+    
+    height: 100vh;
+    line-height: 38px;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid red; */
+    /* justify-content: space-between; */
+    background-image: url(/src/assets/bg/hero.jpg);
+    margin-top: 50px;
+}
+
+
+.hero-info-wrapper{
+    /* border: 2px solid green; */
+    margin: 70px 50px;    
+    position: relative;
+    left: 40px;
+    
+}
+
+.gif-container{
+    /* border: 2px solid blue; */
+    display: flex;
+    width: 400px;
+    margin-left: 100px;
+    
+    img{
+        width: 350px;
+        height: auto;
+        margin: auto;
+    }
+}
+
+.get-started{
+    /* border: 2px solid blue; */
+    margin-left: 500px;
+    width: 180px;
+}
+
+
+.highlighted{
+    background: linear-gradient(#dd9104 0%, #000000 100%);
+    border-radius: 5px;
+    padding: 0 10px;
+  }
+
+
+/* @media screen and (max-width: 625px) {
+
+        
+    .hero-section-container{
+        display: block;
+        flex-direction: column;
+        overflow-x: hidden;
+        width: 100%;
+        margin-top: 10px;
+        font-size: 0.8rem;
+    
+    }
+
+   
+
+    
+
+    .gif-container{
+        img{
+            border: 2px solid green;
+            margin: 0;
+            width: 230px;
+            height: auto; 
+        }
+    }
+
+    .create-account{
+        margin: 5px 100px;
+    }
+
+
+} */</style><style type="text/css" data-vite-dev-id="C:/Users/ICEKING/Desktop/VS-CODE/MY-WEB/Investor/src/stylesheets/Certified.css">.certified-container{
+    /* border: 2px solid red; */
+    width: 100%;
+    background-image: url(/src/assets/bg/bg-7.jpg);
+    /* background-color: blue; */
+    img{
+        /* border: 2px solid green; */
+        width: 100%;
+
+    }
+    
+}</style><style type="text/css" data-vite-dev-id="C:/Users/ICEKING/Desktop/VS-CODE/MY-WEB/Investor/src/stylesheets/Card.css">.card-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* border: 2px solid blue; */
+    height: auto;
+    background-image: url(/src/assets/bg/bg-5.jpg);
+    /* background-color: black; */
+    
+    
+    
+   
+
+    @media screen and (max-width: 625px){
+        .card-container{
+            display: flex;
+            flex-direction: column;
+        
+
+        }
+        
+    }
+
+
+}</style><style type="text/css" data-vite-dev-id="C:/Users/ICEKING/Desktop/VS-CODE/MY-WEB/Investor/src/stylesheets/Plans.css">.plans-container{
+    border: 1px solid;
+    width: 250px;
+    margin-top: 30px;
+    margin-left: 100px;
+    background-color: rgb(20, 20, 20);
+    padding: 24px;
+    
+
+
+    h6{
+        color: #dd9104;
+        opacity: 0.6;
+    }
+    
+    
+    h2{
+
+        font-size: x-large;
+        span{
+            font-size: xx-small;
+        }
+    }
+
+
+    hr{
+        opacity: 0.5;
+        margin: 10px 0;
+    }
+
+    li{
+        font-size: small;
+        line-height: 25px;
+        
+    }
+    
+    button{
+        background-color: rgb(214, 75, 75);
+    }
+
+    button:hover{
+        background-color: black
+    }
+
+}
+
+.plans-header{
+    padding: 10px;
+}
+
+    
+
+/* 
+@media screen and (max-width: 625px) {
+    .plans-container{
+        width: 100px;
+        border: 2px solid blue;
+        
+    }
+    
+} */</style><style type="text/css" data-vite-dev-id="C:/Users/ICEKING/Desktop/VS-CODE/MY-WEB/Investor/src/stylesheets/Iframe.css">.Iframe-container{
+    /* border: 2px solid red; */
+    
+    /* background-image: url('../assets/bg/bg-5.jpg'); */
+
+    .coin-price{
+        border: 2px solid green;
+        height: 300px;
+        
+    }
+
+
+    img{
+        width: 100%;
+    }
+    
+}
+</style><style type="text/css" data-vite-dev-id="C:/Users/ICEKING/Desktop/VS-CODE/MY-WEB/Investor/src/stylesheets/Testimonies.css">.t-container{
+    width: 100%;
+    /* background-image: url(../assets/bg/bg-5.jpg); */
+    background-color: #222429;
+    
+
+    .tcard-container{
+        display: flex;
+        justify-content: center;
+
+        
+        
+    }
+
+    
+    .tcards{
+        margin: 20px;
+        width: 300px;
+        background-color: rgb(15, 15, 15);
+        padding: 20px;
+        transition: background-color 0.2s ease;
+        /* border: 2px solid green; */
+        
+        
+    
+
+
+        p{
+            margin-top: 10px;
+            font-size: small;
+            line-height: 25px;
+            color: rgb(148, 146, 146);
+
+        }
+
+
+
+        img{
+            width: 70px;
+        }
+    }
+
+
+    .tcards:hover{
+        background-color: black
+        
+        
+       
+    }
+
+}</style><style type="text/css" data-vite-dev-id="C:/Users/ICEKING/Desktop/VS-CODE/MY-WEB/Investor/src/stylesheets/Footer.css">.footer-container{
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    color: rgb(173, 173, 173);
+    
+
+    hr{
+        opacity: 0.4
+    }
+
+    div{
+        width: 250px;
+        /* border: 1px solid red; */
+        
+        /* margin: auto 100px; */
+        
+    }
+    
+    .outro{
+        color: rgb(173, 173, 173);
+        font-size: small;
+        display: flex;
+        gap: 20px;
+        font-size: 12px;
+        line-height: 18px;
+        /* border: 2px solid red; */
+        
+        img{
+            width: 40px;
+            height: 40px;
+            margin: 20px auto;
+        }
+    }
+    
+    
+    .office{
+        display: flex;
+        .location{
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            line-height: 22px;
+            /* border: 2px solid red; */
+            
+            a{
+                margin-left: 0;
+            };
+        }
+
+        img{
+            width: 15px;
+            height: 15px;
+            
+            
+        }
+
+    }
+
+    
+
+    
+    
+}</style><style type="text/css" data-vite-dev-id="C:/Users/ICEKING/Desktop/VS-CODE/MY-WEB/Investor/src/stylesheets/Copyright.css">.copyright-container{
+    background-color: rgb(22, 22, 22);
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    
+    
+    a{
+        color: #dd9104;
+        margin: auto 5px;
+    }
+    
+    .copyright{
+        font-size: x-small;
+        margin: 20px auto;
+        
+
+    }
+
+    hr{
+        opacity: 0.3;
+    }
+ 
+}</style><style type="text/css" data-vite-dev-id="C:/Users/ICEKING/Desktop/VS-CODE/MY-WEB/Investor/src/stylesheets/linkstyles/About.css">.about-container{
+    background-color: purple;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/ICEKING/Desktop/VS-CODE/MY-WEB/Investor/src/stylesheets/linkstyles/Contact.css">.contact-container{
+    background-color: green;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/ICEKING/Desktop/VS-CODE/MY-WEB/Investor/src/stylesheets/linkstyles/SignIn.css">.singin-container{
+    background-color: blue;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/ICEKING/Desktop/VS-CODE/MY-WEB/Investor/src/stylesheets/linkstyles/Register.css">.register-container{
+    background-color: red;
+}</style><style type="text/css" data-vite-dev-id="C:/Users/ICEKING/Desktop/VS-CODE/MY-WEB/Investor/src/index.css">body {
+  margin: 0;
+  font-family: 'Arial', 'Helvetica Neue', 'Roboto', 'Times New Roman', 'Georgia', 'Verdana', 'Tahoma', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+</style></head>
+  <body>
+    <div id="root"><div class="home"><div class="header-container"><div><a><img class="logo" src="./favicon.png" alt=""></a></div><div class="menu"><div class="menu-links"><header><nav><a aria-current="page" class="active" href="http://localhost:5173/">Home</a><a class="" href="http://localhost:5173/about-us">About Us</a><a class="" href="http://localhost:5173/contact-us">Contact Us</a><a class="" href="http://localhost:5173/sign-in">Sign In</a><a class="" href="http://localhost:5173/register">Register</a></nav></header></div></div><div class="wallet-btn"><button class="primary">REGISTER </button></div></div><div class="header-container"><div><a><img class="logo" src="./favicon.png" alt=""></a></div><div class="menu"><div class="menu-links"><header><nav><a aria-current="page" class="active" href="http://localhost:5173/">Home</a><a class="" href="http://localhost:5173/about-us">About Us</a><a class="" href="http://localhost:5173/contact-us">Contact Us</a><a class="" href="http://localhost:5173/sign-in">Sign In</a><a class="" href="http://localhost:5173/register">Register</a></nav></header></div></div><div class="wallet-btn"><button class="primary">REGISTER </button></div></div><div class="hero-section-container"><div class="hero-info-wrapper"><h1>WorldClass Crypto <span class="highlighted">Investment</span> Services</h1><p class="hero-info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam aperiam doloremque quibusdam laborum facilis molestiae at. Ipsum atque, accusamus aliquam alias a et ullam iste odit porro delectus quibusdam.</p></div><div class="gif-container"><img src="./btcgif2.gif" alt=""></div><div><button class="get-started">GET STARTED</button></div></div><div class="certified-container"><img src="./sh22.png" alt=""><img src="./comm006.png" alt=""></div><div class="card-container"><div class="plans-container"><div class="plans-header"><h6>STARTER</h6><h2>10%<span>/After 6 Hours</span></h2><hr></div><div class="plans-body"><ul><li>MIN-INVEST: $50</li><li>MAX-INVEST: $499</li><li>24/7 Customer Support</li><li>Fast Cashout</li></ul><button> BUY </button></div></div><div class="plans-container"><div class="plans-header"><h6>LEADER</h6><h2>20%<span>/After 12 Hours</span></h2><hr></div><div class="plans-body"><ul><li>MIN INVEST: $500</li><li>MAX INVEST: $2999</li><li>24/7 Customer Support</li><li>Fast Cashout</li></ul><button> BUY </button></div></div><div class="plans-container"><div class="plans-header"><h6>EMERALD</h6><h2>40%<span>/After 24 Hours</span></h2><hr></div><div class="plans-body"><ul><li>MIN INVEST: $3000</li><li>MAX INVEST: $8999</li><li>24/7 Customer Support</li><li>Fast Cashout</li></ul><button> BUY </button></div></div><div class="plans-container"><div class="plans-header"><h6>RUBY</h6><h2>60%<span>/After 48 Hours</span></h2><hr></div><div class="plans-body"><ul><li>MIN INVEST: $9000</li><li>MAX INVEST: $14999</li><li>24/7 Customer Support</li><li>Fast Cashout</li></ul><button> BUY </button></div></div><div class="plans-container"><div class="plans-header"><h6>MASTER</h6><h2>90%<span>/After 72 Hours</span></h2><hr></div><div class="plans-body"><ul><li>MIN-INVEST: $15000</li><li>MAX-INVEST: $UNLIMITED</li><li>24/7 Customer Support</li><li>Fast Cashout</li></ul><button> BUY </button></div></div><div class="plans-container"><div class="plans-header"><h6>SAPPHIRE</h6><h2>100%<span>/Daily for 4 Weeks</span></h2><hr></div><div class="plans-body"><ul><li>MIN-INVEST: $20,000</li><li>MAX-INVEST: $UNLIMITED</li><li>24/7 Customer Support</li><li>Fast Cashout</li></ul><button> BUY </button></div></div></div><div class="Iframe-container"><div class="Iframe"><iframe width="100%" height="400px" src="./top-cryptocurrencies.html" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0"></iframe></div><div class="powered"><img src="./comm008.png" alt=""></div></div><div class="t-container"><h2>Top Investors</h2><section class="tcard-container"><div class="tcards"><img src="./iv.jpg" alt=""><h4>Ryan McCormick</h4><p>"This is a realistic program for anyone looking for site to invest. Paid to me regularly, keep up good work!</p> </div><div class="tcards"><img src="./ivv.jpg" alt=""><h4>Julian Styles</h4><p>"Bitcoin doubled in 7 days. You should not expect anything more. Excellent customer service!”</p></div><div class="tcards"><img src="./ivvv.jpg" alt=""><h4>Logan Russell</h4><p>"I have decided to use Freeinvestment for Bitcoin packages because all other investment companies don't provide the same level of packages and service. Highly recommend it."</p></div></section></div><div class="footer-container"><div class="outro"><img src="./favicon.png" alt=""><p>Get access to best of crypto investment and the tools and confidence to start ivesting with cryptocurrencies, faster than you can like never before.</p></div><hr><div class="office"><img src="./location-dot-solid.svg" alt=""><div class="location"><h4> Head Office </h4><a href="http://localhost:5173/#">183 Birchpond Road Coram New York, United States</a></div></div><hr><div><h4>Contact Us</h4><div class="contact-admin"><span>Admin</span><h6><a href="http://localhost:5173/#">admin@investor.com</a></h6></div><div class="contact-support"><span>support</span><h6><a href="http://localhost:5173/#">support@investor.com</a></h6></div></div></div><div class="copyright-container"><hr><div class="copyright"><p>© 2020 Copyright<a href="http://localhost:5173/">Investor.com</a>- All Rights Reserved</p></div></div></div></div>
+    <script type="module" src="./main.jsx"></script>
+  
+
+</body></html>

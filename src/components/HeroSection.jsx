@@ -2,6 +2,7 @@ import React from "react";
 import btcgif2 from "../assets/btcgif2.gif";
 import "../stylesheets/HeroSection.css";
 
+
 const HeroSection = () => {
   return (
     <div className="hero-section-container">
