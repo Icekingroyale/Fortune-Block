@@ -1,0 +1,24 @@
+.pagenf-container{
+    width: 100%;
+    height: 100vh;
+    /* margin-top: 60px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-image: url(../../assets/bg/bg-3.jpg);
+
+    .icon{
+        fill: yellow;
+        /* border: 2px solid green; */
+        height: 50px;
+        width: 50px;
+    }
+
+    button{
+        font-weight: bold;
+    }
+
+
+}

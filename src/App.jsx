@@ -1,48 +1,40 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./components/Header";
-import HeroSection from "./components/HeroSection";
-import Certified from "./components/Certified";
-import Card from "./components/Card";
-import Iframe from "./components/Iframe";
-import Testimonies from "./components/Testimonies";
-import Footer from "./components/Footer";
-import Copyright from "./components/Copyright";
-import About from "./components/navlinks/About";
-import Contact from "./components/navlinks/Contact";
-import SignIn from "./components/navlinks/SignIn";
-import Register from "./components/navlinks/Register";
-// import Transactions from "./components/Transactions";
+import {
+  // BrowserRouter,
+  // Routes,
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
+
+import Homepage from "./components/pages/Homepage";
+import MainLayout from "./components/layouts/MainLayout";
+import About from "./components/pages/About";
+import Contact from './components/pages/Contact'
+import SignIn from './components/pages/SignIn'
+import Register from './components/pages/Register'
+import PageNotFound from "./components/pages/PageNotFound";
+
+
+
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<MainLayout />}>
+      <Route index element={<Homepage />} />
+      <Route path="/about-us" element={<About />} />
+      <Route path="/contact-us" element={<Contact />} />
+      <Route path="/sign-in" element={<SignIn />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="*" element={<PageNotFound />} />
+        
+    </Route>
+  )
+);
 
 function App() {
-  return (
-    <>
-      <BrowserRouter>
-        <div className="home">
-          <Routes>
-            <Route path="/" element={<Header />}>
-              {/* <Route index element={<Home />} /> */}
-              <Route path="/about-us" element={<About />} />
-              <Route path="/contact-us" element={<Contact />} />
-              <Route path="/sign-in" element={<SignIn />} />
-              <Route path="/register" element={<Register />} />
-            </Route>
-          </Routes>
-          <Header />
-          <HeroSection />
-          <Certified />
-          <Card />
-          <Iframe />
-          {/* <Transactions /> */}
-          <Testimonies />
-          <Footer />
-          <Copyright />
-
-          {/* Navlinks  */}
-        </div>
-      </BrowserRouter>
-    </>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

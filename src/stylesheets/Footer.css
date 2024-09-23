@@ -59,7 +59,17 @@
 
     }
 
-    
+    .contact-us{
+        /* border: 2px solid red; */
+        
+        .contact-admin{
+            margin-top: 5px;
+        }
+
+        .contact-support{
+            margin-top: 5px;
+        }
+    }
 
     
     

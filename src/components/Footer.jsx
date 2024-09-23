@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div>
+      <div className="contact-us">
         <h4>Contact Us</h4>
         <div className="contact-admin">
           <span>Admin</span>

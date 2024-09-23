@@ -1,122 +1,112 @@
-.header-container{
+.header-container {
+  display: flex;
+  width: 99%;
+  padding: 10px 20px;
+  padding-bottom: 5px;
+  /* border: 2px solid green;  */
+  position: fixed;
+  z-index: 1000;
+  backface-visibility: hidden;
+  background-color: black;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.header-container .menu {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  /* border: 2px solid red; */
+  margin: 10px auto;
+}
+
+.logo-container {
+  a {
     display: flex;
-    width: 99%;
-    padding: 10px 20px;
-    padding-bottom: 5px;
-    /* border: 2px solid green;  */
-    position: fixed;
-    z-index: 1000;
-    backface-visibility: hidden;
-    background-color: black;
-    overflow: hidden;
-    font-size: 14px;
+    margin: auto;
+    gap: 5px;
   }
+}
+
+.investor{
+  transition: 0.5s ease;
+}
+
+.investor:hover{
+  color: #dd9104;
+}
+
+a {
+  margin: 12px;
+  color: white;
+  transition: 0.5s ease;
+  cursor: pointer;
+  /* padding: 20px auto; */
+}
+
+a:hover {
+  color: #dd9104;
+}
+
+.logo {
+  width: 45px;
+  /* border: 2px solid red; */
+  transition: 0.5s ease;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+button {
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  /* background: linear-gradient(#dd9104 0%, #000000 100%); */
+  transition: 0.1s ease-in-out;
+  background-color: #dd9104;
+}
+
+button:hover {
+  /* background: linear-gradient(#000000 0%, #dd9104 100%); */
+  background-color: black;
+  border: 1px solid;
+  border-color: #dd9104;
+}
+
+.hdmenu {
+  /* border: 2px solid red; */
+  width: 30px;
+  height: 30px;
+  display: none;
+
   
-  .header-container .menu{
-    display: flex;
-    justify-content: center;
-    flex: 1;
-    /* border: 2px solid red; */
-    margin: 10px auto;
+}
+
+.active-link{
+  color: #dd9104;
+}
+
+
+
+@media screen and (max-width: 425px) {
+  .menu-links {
+    display: none;
   }
 
-  .logo-container{
-    a{
-      display: flex;
-      margin: auto;
-      gap: 5px;
-    }
-    
-  }
-  
-
-
-  a{
-    margin: 12px;
-    color: white;
-    transition: 0.5s ease;
-    cursor: pointer;
-    /* padding: 20px auto; */
-  }
-  
-  a:hover{
-    color: #dd9104;
-  }
-  
-
-  
-
-
-
-  
-  .logo{
-    width: 45px;
-    /* border: 2px solid red; */
-    transition: 0.5s ease; 
-  } 
-
-  .logo:hover{
-    transform: scale(1.2);
-
+  .wallet-btn {
+    display: none;
   }
 
-
-  button{
-    color: white;
-    border-radius: 20px;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    /* background: linear-gradient(#dd9104 0%, #000000 100%); */
-    transition: 0.1s ease-in-out;
-    background-color: #dd9104;
-  }
-  
-  button:hover{
-    /* background: linear-gradient(#000000 0%, #dd9104 100%); */
-    background-color: black;
-    border: 1px solid;
-    border-color:#dd9104;
-
-  }
-
-
-  .hdmenu{
-    border: 2px solid red;
+  .hdmenu {
+    border: 2px solid green;
     width: 30px;
     height: 30px;
 
-
-    .qmenu{
-      display: none;
+    #open {
+      display: block;
     }
-
-
   }
-
-  
-
-  @media screen and (max-width: 425px) {
-    .menu-links{
-      display: none;
-    }
-
-    .wallet-btn{
-      display: none;
-    }
-
-   
-    .hdmenu{
-      border: 2px solid green;
-      width: 30px;
-      height: 30px;
-  
-  
-      #open{
-        display: block;
-      }
-  
-  
-    }
-    
-  }
+}
