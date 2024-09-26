@@ -7,7 +7,7 @@ const Copyright = () => {
       <hr />
       <div className="copyright">
         <p>
-          &copy; 2020 Copyright<a href="./">Investor.com</a>- All Rights
+          &copy; 2020 Copyright<a href="./">fortuneblock.com</a>- All Rights
           Reserved
         </p>
       </div>

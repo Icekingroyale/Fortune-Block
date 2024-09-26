@@ -10,13 +10,6 @@ import close from "../assets/icons/x-solid.svg";
 // const clickclose = document.getElementById('close')
 // const menu = document.getElementsByClassName('menu-links')
 
-
-
-
-
-
-
-
 const Header = () => {
   return (
     <div className="header-container">
@@ -25,7 +18,7 @@ const Header = () => {
         instead of refreshing the page */}
         <a href="./">
           <img className="logo" src={favicon} alt="" />
-          <h1 className="investor">investor</h1>
+          <h1 className="investor">Fortune Block</h1>
         </a>
       </div>
       <div className="menu">

@@ -10,12 +10,12 @@ const About = () => {
   return (
     <div className="about-container">
       <div className="abt-hero">
-        <h1>About Investor</h1>
+        <h1>About Fortun Block</h1>
       </div>
       <div className="abt-container">
         <h2>About Us</h2>
         <p>
-          Investor has molded an all-around client-driven experience that
+          Fortune Block has molded an all-around client-driven experience that
           focuses on the latest value adding market insights and customizing our
           broad range of investment opportunities to meet the diverse needs of
           high net worth and institutional clients.
@@ -24,7 +24,7 @@ const About = () => {
         <p>
           Our aim is a professional investment corporation found in the year
           27th June 2017. we engage in cryptocurrency exchange, real estate
-          management and agricultural production. Our goal at Investor is
+          management and agricultural production. Our goal at Fortune Block is
           to provide our clients with a comprehensive market with new resources.
           Currently, AIM operates as an independently investment management
           company. We are very concerned about how we relate with and deal with
@@ -35,7 +35,7 @@ const About = () => {
         <br />
         <p>
           We tend to achieve this by diversifying into various sectors of the
-          economy and making good impacts in all. Investor has molded an
+          economy and making good impacts in all. Fortune Block has molded an
           all-around client-driven experience that focuses on the latest value
           adding market insights and customizing our broad range of investment
           opportunities to meet the diverse needs of high net worth and

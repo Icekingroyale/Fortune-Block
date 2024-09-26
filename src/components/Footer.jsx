@@ -29,13 +29,13 @@ const Footer = () => {
         <div className="contact-admin">
           <span>Admin</span>
           <h6>
-            <a href="#">admin@investor.com</a>
+            <a href="#">admin@fortuneblock.com</a>
           </h6>
         </div>
         <div className="contact-support">
           <span>support</span>
           <h6>
-            <a href="#">support@investor.com</a>
+            <a href="#">support@fortuneblock.com</a>
           </h6>
         </div>
       </div>
