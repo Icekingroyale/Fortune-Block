@@ -9,31 +9,11 @@
 
 /* Media Queries for responsiveness */
 
-/* Tablet screen (768px and below) */
-@media (max-width: 768px) {
-    .card-container {
-        grid-template-columns: repeat(2, 1fr); /* 2-column layout */
-        grid-template-rows: auto; /* Allow dynamic rows */
-        grid-gap: 15px; /* Adjust the gap for smaller screens */
+/* @media screen and (max-width: 425px) {
+    .plans-container{
+        
+        border: 2px solid green;
+        
     }
     
-    .card-container > .card { /* Adjust card size */
-        width: 100%; /* Make cards responsive */
-        padding: 10px; /* Add padding to cards */
-    }
-}
-
-/* Mobile screen (480px and below) */
-@media (max-width: 480px) {
-    .card-container {
-        grid-template-columns: repeat(2, 1fr); /* Keep 2 columns */
-        grid-template-rows: auto;
-        grid-gap: 10px; /* Reduce the gap for small screens */
-    }
-
-    .card-container > .card {
-        width: 100%; /* Ensure cards fit inside the container */
-        padding: 8px; /* Slightly reduce padding on smaller screens */
-        box-sizing: border-box; /* Ensure padding doesn't increase card size */
-    }
-}
+} */

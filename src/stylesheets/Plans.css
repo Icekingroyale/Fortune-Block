@@ -50,13 +50,12 @@
 }
 
     
-
-/* 
-@media screen and (max-width: 625px) {
+ 
+@media screen and (max-width: 425px) {
     .plans-container{
-        width: 100px;
+        margin: auto;
         border: 2px solid blue;
         
     }
     
-} */
+}
