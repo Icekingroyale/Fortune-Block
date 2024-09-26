@@ -1,20 +1,28 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import btcgif2 from "../assets/btcgif2.gif";
 import "../stylesheets/HeroSection.css";
 
-
 const HeroSection = () => {
+  const navigate = useNavigate(); // Initialize the navigate hook
+
+  const handleBtnClick = () => {
+    navigate("/register"); // Navigate to the Sign Up page
+  };
+
   return (
     <div className="hero-section-container">
       <div className="hero-info-wrapper">
         <h1>
-          WorldClass Crypto <span className="highlighted">Investment</span> Services
+          WorldClass Crypto <span className="highlighted">Investment</span>{" "}
+          Services
         </h1>
         <p className="hero-info-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          magnam aperiam doloremque quibusdam laborum facilis molestiae at.
-          Ipsum atque, accusamus aliquam alias a et ullam iste odit porro
-          delectus quibusdam.
+          We provide cryptocurrency investment and trading solutions, our
+          platform creates an accessible user-friendly and efficient environment
+          for online trading and investment of crypto. Our revolutionary technology is
+          taking the crypto investment industry by storm, empowering millions
+          across the globe to participate and invest instantly.
         </p>
       </div>
       <div className="gif-container">
@@ -22,7 +30,9 @@ const HeroSection = () => {
       </div>
 
       <div>
-        <button className="get-started">GET STARTED</button>
+        <button className="get-started" onClick={handleBtnClick}>
+          GET STARTED
+        </button>
       </div>
     </div>
   );

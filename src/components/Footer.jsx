@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
       <hr />
       <div className="office">
-        <img src={location} alt="" />
+        <img src={location} alt="" className="location-img" />
         <div className="location">
           <h4> Head Office </h4>
           <a href="#">183 Birchpond Road Coram New York, United States</a>

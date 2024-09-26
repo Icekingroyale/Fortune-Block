@@ -3,17 +3,25 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 20px; /* Add some gap between cards */
+    /* grid-gap: 20px;  */
     height: auto;
+    background-color: #222429;
+    /* margin-bottom: 20px; */
+
+
 }
 
 /* Media Queries for responsiveness */
 
-/* @media screen and (max-width: 425px) {
-    .plans-container{
-        
-        border: 2px solid green;
+@media screen and (max-width: 425px) {
+    .card-container{        
+        /* border: 2px solid green; */
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 0;
+        align-items: center;
         
     }
     
-} */
+}

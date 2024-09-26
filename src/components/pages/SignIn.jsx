@@ -74,7 +74,7 @@ const SignIn = () => {
             {errors.password && <p className="error">{errors.password}</p>}
           </div>
 
-          <div className="form-group checkbox-group">
+          <div className="form-group-checkbox-group">
             <label>
               <input
                 type="checkbox"
@@ -94,7 +94,7 @@ const SignIn = () => {
           </button>
 
           <p className="signup-prompt">
-            Don't have an account? <Link to="/signup">Sign Up</Link>
+            Don't have an account? <Link to="/register">Sign Up</Link>
           </p>
         </form>
       </div>

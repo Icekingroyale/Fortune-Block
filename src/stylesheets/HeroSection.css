@@ -66,20 +66,26 @@
     /* height: 100vh;   */
     border: 2px solid;
     border-image: linear-gradient(#dd9104 0%, #7c7c7c 100%) 1;
-    line-height: normal;
+    line-height: small;
     border-radius: 10px;
     line-height: 30px;
     margin: 35px 20px;
     padding: 15px;
+    position: relative;
+    top: -20px;
   }
   
+  .hero-info-description{
+    /* border: 2px solid green; */
+    font-size: small;
+  }
   
   .gif-container{
     margin: auto;
     /* border: 2px solid green; */
     width:auto;
     position: relative;
-    top: -30px;
+    top: -50px;
     /* padding: 0; */
     /* margin-bottom: 170px; */
     
@@ -95,7 +101,7 @@
     /* display: flex; */
     margin-bottom: 30px;
     position: relative;
-    top: -20px;
+    top: -45px;
     left: 100px;
 
   }

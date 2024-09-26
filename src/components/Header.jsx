@@ -1,25 +1,24 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import "../stylesheets/Header.css";
 import favicon from "../assets/favicon.png";
-import { NavLink } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import open from "../assets/icons/bars-solid.svg";
 import close from "../assets/icons/x-solid.svg";
 // import { useNavigate } from "react-router-dom";
 
-// const clickopen = document.getElementById('open')
-// const clickclose = document.getElementById('close')
-// const menu = document.getElementsByClassName('menu-links')
 
 
 
 
 
 
-const Header = () => {
+const Header = () => {  
 
-  const [openMenu, setOpenMenu] = useState(false);
-  
-  const toggleMenu = () => setOpenMenu(prevOpenMenu => !prevOpenMenu)
+  const navigate = useNavigate()
+
+  const handleBtnClick = () => {
+    navigate('/register')
+  }
 
 
   return (
@@ -72,11 +71,10 @@ const Header = () => {
         </div>
       </div>
       <div className="wallet-btn">
-        <button className="primary">REGISTER </button>
+        <button className="primary" onClick={handleBtnClick}>REGISTER </button>
       </div>
       <div className="hdmenu">
-        <img src={open} alt="" className="qmenu" id="open" onClick={toggleMenu}
-        />
+        <img src={open} alt="" className="qmenu" id="open"   />
         <img src={close} alt="" className="qmenu" id="close" />
       </div>
     </div>

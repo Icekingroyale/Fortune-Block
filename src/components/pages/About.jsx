@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "../../stylesheets/pagestyles/About.css";
 import cert from "../../assets/cert.jpg";
 // import bg from '../../assets/bg/about-bg.png'
@@ -7,6 +8,14 @@ import Copyright from "../Copyright";
 
 
 const About = () => {
+
+  const navigate = useNavigate()
+
+  const handleBtnClick = () => {
+    navigate('/register')
+  }
+
+
   return (
     <div className="about-container">
       <div className="abt-hero">
@@ -47,7 +56,7 @@ const About = () => {
       </div>
       <img src={cert} alt="" />
       <div className="register-btn">
-        <button> CREATE ACCOUNT </button>
+        <button onClick={handleBtnClick}> CREATE ACCOUNT </button>
       </div>
 
       <Footer />

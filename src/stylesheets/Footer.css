@@ -76,20 +76,45 @@
 @media screen and (max-width: 425px) {
     .footer-container{
         /* border: 2px solid green; */
+        display: flex;
         flex-direction: column;
         gap: 10px;
-        padding: 0;
+        align-items: center;
+
+
+        h4, span, a{
+            /* border: 2px solid red; */
+            display: flex;
+            justify-content: center;
+        }
+
+        .location-img{
+            /* border: 2px solid red; */
+            margin: auto;
+
+        }
+
+        hr{
+            flex-direction: column;
+        }
+
+       .location{
+        a{
+            text-align: center;
+        }
+       }
+
+       .outro{
+        display: flex;
+        gap: 0;
+
+
+        p{
+            text-align: center;
+        }
+       }
+
     }
-    
-
-
-
-
-
-
-
-
-
 
 
 }

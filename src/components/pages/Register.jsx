@@ -3,6 +3,7 @@ import "../../stylesheets/pagestyles/Register.css";
 import countries from "../../data-countries.json"; // Import the JSON file
 import Footer from "../Footer";
 import Copyright from "../Copyright";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const [formData, setFormData] = useState({
@@ -158,6 +159,9 @@ const SignUp = () => {
           <button type="submit" className="signup-btn">
             Sign Up
           </button>
+          <p className="signin-prompt">
+            Already have an account? <Link to="/sign-in">Sign In</Link>
+          </p>
         </form>
       </div>
       <Footer />

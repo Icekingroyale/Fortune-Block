@@ -34,6 +34,8 @@
     box-sizing: border-box;
   }
   
+
+
   .checkbox-group {
     display: flex;
     justify-content: space-between;
