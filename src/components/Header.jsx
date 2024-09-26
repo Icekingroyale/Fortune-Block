@@ -1,13 +1,21 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import "../stylesheets/Header.css";
 import favicon from "../assets/favicon.png";
 import { NavLink } from "react-router-dom";
 import open from "../assets/icons/bars-solid.svg";
 import close from "../assets/icons/x-solid.svg";
+// import { useNavigate } from "react-router-dom";
 
 // const clickopen = document.getElementById('open')
 // const clickclose = document.getElementById('close')
 // const menu = document.getElementsByClassName('menu-links')
+
+
+
+
+
+
+
 
 const Header = () => {
   return (

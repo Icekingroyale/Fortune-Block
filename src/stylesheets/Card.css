@@ -1,26 +1,39 @@
-.card-container{
+.card-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    /* border: 2px solid blue; */
+    grid-gap: 20px; /* Add some gap between cards */
     height: auto;
-    /* background-image: url(../assets/bg/bg-5.jpg); */
-    /* background-color: black; */
-    
-    
-    
-   
+}
 
-    @media screen and (max-width: 625px){
-        .card-container{
-            display: flex;
-            flex-direction: column;
-        
+/* Media Queries for responsiveness */
 
-        }
-        
+/* Tablet screen (768px and below) */
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* 2-column layout */
+        grid-template-rows: auto; /* Allow dynamic rows */
+        grid-gap: 15px; /* Adjust the gap for smaller screens */
+    }
+    
+    .card-container > .card { /* Adjust card size */
+        width: 100%; /* Make cards responsive */
+        padding: 10px; /* Add padding to cards */
+    }
+}
+
+/* Mobile screen (480px and below) */
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); /* Keep 2 columns */
+        grid-template-rows: auto;
+        grid-gap: 10px; /* Reduce the gap for small screens */
     }
 
-
+    .card-container > .card {
+        width: 100%; /* Ensure cards fit inside the container */
+        padding: 8px; /* Slightly reduce padding on smaller screens */
+        box-sizing: border-box; /* Ensure padding doesn't increase card size */
+    }
 }

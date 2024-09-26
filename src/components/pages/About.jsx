@@ -5,6 +5,7 @@ import cert from "../../assets/cert.jpg";
 import Footer from "../Footer";
 import Copyright from "../Copyright";
 
+
 const About = () => {
   return (
     <div className="about-container">
@@ -34,14 +35,14 @@ const About = () => {
         <br />
         <p>
           We tend to achieve this by diversifying into various sectors of the
-          economy and making good impacts in all. Capitalessence has molded an
+          economy and making good impacts in all. Investor has molded an
           all-around client-driven experience that focuses on the latest value
           adding market insights and customizing our broad range of investment
           opportunities to meet the diverse needs of high net worth and
           institutional clients. We deliver high performance with the clients’
           projected satisfaction We are Constantly ready to assist you make
           positive investment decisions, earning as much return as possible from
-          selected investment instruments and markets.
+          selected investment instruments and markets. 
         </p>
       </div>
       <img src={cert} alt="" />

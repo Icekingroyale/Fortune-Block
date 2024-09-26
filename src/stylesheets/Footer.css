@@ -70,7 +70,26 @@
             margin-top: 5px;
         }
     }
+    
+}
 
+@media screen and (max-width: 425px) {
+    .footer-container{
+        /* border: 2px solid green; */
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
     
-    
+
+
+
+
+
+
+
+
+
+
+
 }

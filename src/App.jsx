@@ -15,7 +15,7 @@ import Contact from './components/pages/Contact'
 import SignIn from './components/pages/SignIn'
 import Register from './components/pages/Register'
 import PageNotFound from "./components/pages/PageNotFound";
-
+import ResetPass from './components/pages/ResetPass'
 
 
 
@@ -28,6 +28,7 @@ const router = createBrowserRouter(
       <Route path="/sign-in" element={<SignIn />} />
       <Route path="/register" element={<Register />} />
       <Route path="*" element={<PageNotFound />} />
+      <Route path="/forgot-password" element={<ResetPass />} />
         
     </Route>
   )

@@ -21,6 +21,7 @@ const Card = () => {
 
   return (
     <div className="card-container">
+      
       {data.map((item, i) => (
         <Plans
           key={i}
@@ -33,6 +34,7 @@ const Card = () => {
           item3={item.items[3]}
         />
       ))}
+      
 
       
       {/* {plansData.map((item, i) => (

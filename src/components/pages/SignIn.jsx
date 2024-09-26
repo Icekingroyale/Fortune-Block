@@ -1,12 +1,107 @@
-import React from "react";
-import "../../stylesheets/pagestyles/SignIn.css";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "../../stylesheets/pagestyles/SignIn.css"; // Reuse the same CSS file
+import Footer from "../Footer";
+import Copyright from "../Copyright";
+import Guarantee from '../Guarantee'
 
 const SignIn = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+    rememberMe: false,
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value,
+    });
+  };
+
+  const validateForm = () => {
+    let formErrors = {};
+
+    if (!formData.email.trim() || !/\S+@\S+\.\S+/.test(formData.email)) {
+      formErrors.email = "A valid email is required";
+    }
+    if (!formData.password.trim()) {
+      formErrors.password = "Password is required";
+    }
+
+    setErrors(formErrors);
+    return Object.keys(formErrors).length === 0;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (validateForm()) {
+      console.log("Form submitted", formData);
+      // Handle form submission logic here
+    }
+  };
+
   return (
-    <div className="signin-container">
-      <h1>Sign In</h1>
-      <p>This is the sign in page</p>
-    </div>
+    <>
+      <div className="signin-container">
+        <form onSubmit={handleSubmit} className="signin-form">
+          <h2>Sign In</h2>
+
+          <div className="form-group">
+            <label>Email</label>
+            <input
+              placeholder="E-mail"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+            />
+            {errors.email && <p className="error">{errors.email}</p>}
+          </div>
+
+          <div className="form-group">
+            <label>Password</label>
+            <input
+              placeholder="Password"
+              type="password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+            />
+            {errors.password && <p className="error">{errors.password}</p>}
+          </div>
+
+          <div className="form-group checkbox-group">
+            <label>
+              <input
+                type="checkbox"
+                name="rememberMe"
+                checked={formData.rememberMe}
+                onChange={handleChange}
+              />
+              Remember Me
+            </label>
+            <Link to="/forgot-password" className="forgot-password-link">
+              Forgot Password?
+            </Link>
+          </div>
+
+          <button type="submit" className="signin-btn">
+            Login
+          </button>
+
+          <p className="signup-prompt">
+            Don't have an account? <Link to="/signup">Sign Up</Link>
+          </p>
+        </form>
+      </div>
+      <Guarantee />
+      <Footer />
+      <Copyright />
+    </>
   );
 };
 
