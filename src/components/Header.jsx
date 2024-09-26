@@ -1,4 +1,4 @@
-// import React, { useState } from "react";
+import React, { useState } from "react";
 import "../stylesheets/Header.css";
 import favicon from "../assets/favicon.png";
 import { NavLink } from "react-router-dom";
@@ -10,7 +10,18 @@ import close from "../assets/icons/x-solid.svg";
 // const clickclose = document.getElementById('close')
 // const menu = document.getElementsByClassName('menu-links')
 
+
+
+
+
+
 const Header = () => {
+
+  const [openMenu, setOpenMenu] = useState(false);
+  
+  const toggleMenu = () => setOpenMenu(prevOpenMenu => !prevOpenMenu)
+
+
   return (
     <div className="header-container">
       <div className="logo-container">
@@ -64,7 +75,8 @@ const Header = () => {
         <button className="primary">REGISTER </button>
       </div>
       <div className="hdmenu">
-        <img src={open} alt="" className="qmenu" id="open" />
+        <img src={open} alt="" className="qmenu" id="open" onClick={toggleMenu}
+        />
         <img src={close} alt="" className="qmenu" id="close" />
       </div>
     </div>

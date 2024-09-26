@@ -1,12 +1,12 @@
 .header-container {
   display: flex;
-  width: 99%;
+  width: 100%;
   padding: 10px 20px;
   padding-bottom: 5px;
   /* border: 2px solid green;  */
   position: fixed;
   z-index: 1000;
-  backface-visibility: hidden;
+  /* backface-visibility: hidden; */
   background-color: black;
   overflow: hidden;
   font-size: 14px;
@@ -76,13 +76,9 @@ button:hover {
   border-color: #dd9104;
 }
 
-.hdmenu {
-  /* border: 2px solid red; */
-  width: 30px;
-  height: 30px;
-  display: none;
-
-  
+#open, #close{
+  /* display: none; */
+  /* border: 2px solid green; */
 }
 
 .active-link{
@@ -92,6 +88,21 @@ button:hover {
 
 
 @media screen and (max-width: 425px) {
+  .header-container{
+    /* background-color: blue; */
+    width: 100%;
+  }
+
+
+  .logo-container{
+    font-size: smaller;
+  }
+
+  .logo{
+    width: 30px;
+  }
+
+
   .menu-links {
     display: none;
   }
@@ -100,13 +111,19 @@ button:hover {
     display: none;
   }
 
-  .hdmenu {
-    border: 2px solid green;
+
+  .qmenu{
     width: 30px;
     height: 30px;
+  }
 
-    #open {
-      display: block;
-    }
+  #close{
+    border: 2px solid red;
+    display: none;
+  }
+
+  #open {
+    /* display: block; */
+    /* border: 2px solid green; */
   }
 }
