@@ -66,6 +66,10 @@ const Header = () => {
               >
                 Register
               </NavLink>
+
+              <Navlink to='/dashboard' >
+                Backend
+              </Navlink>
             </nav>
           </header>
         </div>

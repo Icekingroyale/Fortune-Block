@@ -81,6 +81,11 @@
         gap: 10px;
         align-items: center;
 
+        h4{
+            color:#ffb120;
+
+        }
+
 
         h4, span, a{
             /* border: 2px solid red; */

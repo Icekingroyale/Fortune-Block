@@ -57,12 +57,38 @@
 
 @media screen and (max-width: 400px){
   .about-container{
-  
-
-
-
-
-
+    width: 100%;
+    margin: auto;    
 
   }
+
+ .abt-hero{
+  /* border: 2px solid green; */
+
+  h1{
+    /* border: 2px solid red; */
+    margin-left: 25px !important;
+  }  
+  
+ }
+
+ .abt-container{
+  text-align: center;
+  font-size: small;
+
+  
+}
+
+
+.cert{
+  /* border: 2px solid red; */
+  width: 380px !important;
+  height: 300px;
+}
+
+
+
+
+
+
 }

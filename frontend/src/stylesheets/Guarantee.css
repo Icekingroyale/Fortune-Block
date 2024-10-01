@@ -24,6 +24,7 @@
 
       span {
           background: linear-gradient(#dd9104 0%, #000000 100%);
+
           border-radius: 5px;
           padding: 0 10px;
         }
@@ -34,18 +35,20 @@
 
 @media screen and (max-width: 425px) {
     .guarantee-container{
-        flex-direction: column-reverse;        
-        border: 2px solid blue;
+        flex-direction: column-reverse;   
+        /* margin: 0; */
+        gap: 0;
+        /* border: 2px solid blue; */
         
         h2{
             /* line-height: normal; */
 
 
             span{
-                background: none;
-                background-clip: initial;
-                -webkit-text-fill-color: initial;
-                border: 2px solid blue;
+                background: none !important;
+                color: #ffb120;
+
+                /* border: 2px solid blue; */
                 /* padding: 10px; */
                 /* color:#dd9104; */
             }
@@ -54,6 +57,14 @@
 
         img{
             width: 230px;
+            /* border: 2px solid red; */
+        }
+
+        .gtext{
+            /* border: 2px solid green; */
+            width: 100%;
+            padding: 20px;
+            text-align: center;
         }
         
     }

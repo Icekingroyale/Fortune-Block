@@ -6,20 +6,17 @@ import cert from "../../assets/cert.jpg";
 import Footer from "../Footer";
 import Copyright from "../Copyright";
 
-
 const About = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const handleBtnClick = () => {
-    navigate('/register')
-  }
-
+    navigate("/register");
+  };
 
   return (
     <div className="about-container">
       <div className="abt-hero">
-        <h1>About Fortun Block</h1>
+        <h1>About Fortune Block</h1>
       </div>
       <div className="abt-container">
         <h2>About Us</h2>
@@ -51,10 +48,10 @@ const About = () => {
           institutional clients. We deliver high performance with the clients’
           projected satisfaction We are Constantly ready to assist you make
           positive investment decisions, earning as much return as possible from
-          selected investment instruments and markets. 
+          selected investment instruments and markets.
         </p>
       </div>
-      <img src={cert} alt="" />
+      <img src={cert} alt="" className="cert" />
       <div className="register-btn">
         <button onClick={handleBtnClick}> CREATE ACCOUNT </button>
       </div>
