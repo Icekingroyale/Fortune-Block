@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import btcgif2 from "../assets/btcgif2.gif";
 import "../stylesheets/HeroSection.css";
 
@@ -27,6 +27,10 @@ const HeroSection = () => {
       </div>
       <div className="gif-container">
         <img src={btcgif2} alt="" />
+      {/* </div>
+          <Link> Backend </Link>
+      <div> */}
+        
       </div>
 
       <div>

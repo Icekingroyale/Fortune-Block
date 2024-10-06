@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-image: url(../assets/bg/hero.jpg);
+  
   margin-top: 50px;
 }
 
