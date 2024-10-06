@@ -11,7 +11,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div>
+    <div className='dashboard-container'>
       <h1>Dashboard</h1>
       {data ? <p>{data}</p> : <p>Loading...</p>}
     </div>
