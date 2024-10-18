@@ -64,10 +64,13 @@
   }
   
   .hero-info-wrapper{
+
+    h1{
+      text-align: center;
+    }
     /* height: 100vh;   */
     border: 2px solid;
     border-image: linear-gradient(#dd9104 0%, #7c7c7c 100%) 1;
-    line-height: small;
     border-radius: 10px;
     line-height: 30px;
     margin: 35px 20px;
@@ -79,6 +82,8 @@
   .hero-info-description{
     /* border: 2px solid green; */
     font-size: small;
+    text-align: center;
+
   }
   
   .gif-container{

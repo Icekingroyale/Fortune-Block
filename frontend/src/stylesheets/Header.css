@@ -28,11 +28,11 @@
   }
 }
 
-.investor{
+.investor {
   transition: 0.5s ease;
 }
 
-.investor:hover{
+.investor:hover {
   color: #dd9104;
 }
 
@@ -76,33 +76,34 @@ button:hover {
   border-color: #dd9104;
 }
 
-#open, #close{
+.open,
+.close {
   /* display: none; */
   /* border: 2px solid green; */
 }
 
-.active-link{
+.active-link {
   color: #dd9104;
 }
 
-
+.nav-links{
+  display: none;
+}
 
 @media screen and (max-width: 425px) {
-  .header-container{
+  .header-container {
     /* background-color: blue; */
     width: 100%;
   }
 
-
-  .logo-container{
+  .logo-container {
     font-size: smaller;
   }
 
-  .logo{
+  .logo {
     width: 30px;
   }
-
-
+/*  */
   .menu-links {
     display: none;
   }
@@ -111,19 +112,22 @@ button:hover {
     display: none;
   }
 
-
-  .qmenu{
+  .qmenu {
     width: 30px;
     height: 30px;
   }
 
-  #close{
-    /* border: 2px solid red; */
-    display: none;
+  .menu-icon.open {
+    display: inline-block; /* Show buttons in mobile mode */
   }
 
-  #open {
-    /* display: none; */
-    /* border: 2px solid green; */
+  .nav-links.show {
+    display: block; /* Show the menu when it's open */
   }
+
+  .hidden {
+    display: none; /* Class to hide elements */
+  }
+
+
 }
