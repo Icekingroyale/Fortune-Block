@@ -16,7 +16,7 @@ import SignIn from './components/pages/SignIn'
 import Register from './components/pages/Register'
 import PageNotFound from "./components/pages/PageNotFound";
 import ResetPass from './components/pages/ResetPass'
-import Dashboard from "./components/pages/Dashboard";
+import Dashboard from './components/logged-in/Dashboard'
 
 
 

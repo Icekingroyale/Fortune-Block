@@ -4,6 +4,7 @@ import "../../stylesheets/pagestyles/SignIn.css"; // Reuse the same CSS file
 import Footer from "../Footer";
 import Copyright from "../Copyright";
 import Guarantee from '../Guarantee'
+import Header from "../Header";
 
 const SignIn = () => {
   const [formData, setFormData] = useState({
@@ -46,6 +47,7 @@ const SignIn = () => {
 
   return (
     <>
+    <Header />
       <div className="signin-container">
         <form onSubmit={handleSubmit} className="signin-form">
           <h2>Sign In</h2>

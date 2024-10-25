@@ -28,6 +28,10 @@
   }
 }
 
+.sign-in{
+  display: none;
+}
+
 .investor {
   transition: 0.5s ease;
 }
@@ -86,24 +90,33 @@ button:hover {
   color: #dd9104;
 }
 
-.nav-links{
+.nav-links {
   display: none;
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 700px) {
   .header-container {
-    /* background-color: blue; */
+    background-color: black;
     width: 100%;
   }
 
+  .investor{
+    font-size: 20px;
+  }
+
+  .sign-in{
+    display: block;
+    margin: auto 10px;
+  }
+
   .logo-container {
-    font-size: smaller;
+    font-size: 12px;
   }
 
   .logo {
-    width: 30px;
+    width: 25px;
   }
-/*  */
+  
   .menu-links {
     display: none;
   }
@@ -111,23 +124,43 @@ button:hover {
   .wallet-btn {
     display: none;
   }
-
-  .qmenu {
+  
+  .menu-icon {
+    display: inline-block; /* Show buttons in mobile mode */
     width: 30px;
     height: 30px;
   }
 
-  .menu-icon.open {
-    display: inline-block; /* Show buttons in mobile mode */
+  .nav-links.show{
+    margin-top: 50px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    width: 100vw;
+    height: 90vh;
+    z-index: 1000;
+
   }
 
-  .nav-links.show {
-    display: block; /* Show the menu when it's open */
-  }
 
   .hidden {
-    display: none; /* Class to hide elements */
+    display: none; /* hide menu close on page load */
+  }
+
+  .close{
+    margin: auto 190px;
+  }
+
+  .primary{
+    margin-top: 50px;
+    font-size: smaller;
+  }  
+
+  div.menu-container{
+    /* background-color: green; */
   }
 
 
+  
 }

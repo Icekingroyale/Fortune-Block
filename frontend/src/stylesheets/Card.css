@@ -13,7 +13,7 @@
 
 /* Media Queries for responsiveness */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1000px) {
     .card-container{        
         /* border: 2px solid green; */
         display: grid;

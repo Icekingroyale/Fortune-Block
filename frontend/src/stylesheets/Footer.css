@@ -73,7 +73,7 @@
     
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 580px) {
     .footer-container{
         /* border: 2px solid green; */
         display: flex;

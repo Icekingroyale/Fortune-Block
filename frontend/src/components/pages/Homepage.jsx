@@ -21,6 +21,7 @@ import Copyright from "../Copyright";
 const Homepage = () => {
   return (
     <>
+    <div className='homepage'>
       <Header />
       <HeroSection /> 
       <Certified />
@@ -30,6 +31,7 @@ const Homepage = () => {
       <Testimonies />
       <Footer />
       <Copyright />
+    </div>
     </>
   )
 } 
