@@ -5,6 +5,7 @@ import Footer from "../Footer";
 import Copyright from "../Copyright";
 import Guarantee from '../Guarantee'
 import Header from "../Header";
+import Dashboard from "../layouts/Dashboard"
 
 const SignIn = () => {
   const [formData, setFormData] = useState({
@@ -14,6 +15,8 @@ const SignIn = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login status
+
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -40,10 +43,15 @@ const SignIn = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log("Form submitted", formData);
+      setIsLoggedIn(true);
+      // console.log("Form submitted", formData);
       // Handle form submission logic here
     }
   };
+
+  if (isLoggedIn){
+    return <Dashboard />
+  }
 
   return (
     <>

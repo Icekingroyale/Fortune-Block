@@ -1,4 +1,8 @@
 .dashboard-container{
-    border: 2px solid blue;
     background-color: purple;
+    h1{
+        color: red;
+    }
+    
+    border: 2px solid blue;
 }

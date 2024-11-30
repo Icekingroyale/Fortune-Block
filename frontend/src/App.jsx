@@ -7,8 +7,8 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
-
-import Homepage from "./components/pages/Homepage";
+import AOS from 'aos';
+import Homepage from "./components/layouts/Homepage";
 import MainLayout from "./components/layouts/MainLayout";
 import About from "./components/pages/About";
 import Contact from './components/pages/Contact'
@@ -16,7 +16,7 @@ import SignIn from './components/pages/SignIn'
 import Register from './components/pages/Register'
 import PageNotFound from "./components/pages/PageNotFound";
 import ResetPass from './components/pages/ResetPass'
-import Dashboard from './components/logged-in/Dashboard'
+import Dashboard from './components/layouts/Dashboard'
 
 
 

@@ -19,7 +19,7 @@
   }
 
   img {
-    width: 500px;
+    width: 80%;
     margin: auto;
     margin-top: 30px;
   }
@@ -64,6 +64,7 @@
 
  .abt-hero{
   /* border: 2px solid green; */
+  
 
   h1{
     /* border: 2px solid red; */
@@ -78,17 +79,4 @@
 
   
 }
-
-
-.cert{
-  /* border: 2px solid red; */
-  width: 380px !important;
-  height: 300px;
-}
-
-
-
-
-
-
 }

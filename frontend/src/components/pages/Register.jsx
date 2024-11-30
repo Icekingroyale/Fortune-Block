@@ -63,7 +63,8 @@ const SignUp = () => {
     <>
       <Header />
       <div className="signup-container">
-        <form onSubmit={handleSubmit} className="signup-form">
+        <form onSubmit={handleSubmit} className="signup-form"
+        method='POST' >
           <h2>Sign Up</h2>
           <div className="form-group">
             <label>First Name</label>
