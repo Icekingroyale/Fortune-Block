@@ -29,12 +29,6 @@ const HeroSection = () => {
       <div className="gnb-div">
         <div className="gif-container">
           <img src={btcgif2} alt="" />
-          {/* </div>
-          <Link> Backend </Link>
-          <div> */}
-        </div>
-
-        <div>
           <button className="get-started" onClick={handleBtnClick}>
             GET STARTED
           </button>

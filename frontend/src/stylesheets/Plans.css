@@ -1,8 +1,12 @@
+.all{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+}
 .plans-container{
     border: 1px solid;
     width: 250px;
-    margin-top: 30px;
-    margin-left: 100px;
+    margin: 30px;
     background-color: rgb(15, 15, 15);
     padding: 24px;
     

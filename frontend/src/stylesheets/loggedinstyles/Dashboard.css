@@ -1,8 +1,9 @@
 .dashboard-container{
-    background-color: purple;
+    height: 100%;
+    background-color: rgb(187, 2, 187);
     h1{
-        color: red;
+        /* color: red; */
     }
     
-    border: 2px solid blue;
+    
 }

@@ -1,38 +1,42 @@
+
+
 .hero-section-container {
-  height: 100vh;
   line-height: 38px;
-  padding: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-image: url(../assets/bg/hero.jpg);
-  margin-top: 50px;
-  /* border: 2px solid blue; */
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .hero-info-wrapper {
+  text-align: center;
+  display: flex;
+  border: 2px solid;
+  border-image: linear-gradient(#dd9104 0%, #7c7c7c 100%) 1;
+  flex-direction: column;
   margin: 70px 50px;
-  
-  /* position: relative; */
-  /* left: 40px; */
-  /* border: 2px solid red; */
+  min-width: 200px;
+  flex-basis: 500px;
+
 }
 
 .gif-container {
   display: flex;
-  width: 400px;
-  margin-left: 100px;
-  /* border: 2px solid red; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
 .gif-container img {
-  max-width: 350px;
-  height: auto;
-  margin: auto;
+  max-width: 250px;
 }
 
-.get-started {
-  margin-left: 210px;
+div>.get-started {
+  display: flex;
+  justify-content: center;
   width: 180px;
+  margin-bottom: 10px;
 }
 
 .highlighted {
@@ -41,86 +45,14 @@
   padding: 0 10px;
 }
 
-/* Media Queries for responsiveness */
+@media (max-width: 850px){
+  .gif-container{
+    margin-top: -50px;
+  }
+}
 
-/* @media screen and (max-width: 430px) {
+@media (max-width: 428px){
   .hero-info-wrapper{
-    border: 2px solid green;
-  }
-} */
-
-/* Tablet screen (768px and below) */
-@media (max-width: 430px) {
-  .hero-section-container {
-    /* border: 2px solid red; */
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    background-image: url(../assets/bg/bg-1.jpg);
-    margin-top: 50px;
-    justify-content: center;
-  }
-  .highlighted {
-    color: #ffb120;
-    border-radius: 5px;
-    padding: 0 10px;
-    background: fixed;
-  }
-
-  .hero-info-wrapper {
-    h1 {
-      text-align: center;
-    }
-    /* height: 100vh;   */
-    border: 2px solid;
-    border-image: linear-gradient(#dd9104 0%, #7c7c7c 100%) 1;
-    border-radius: 10px;
-    line-height: 30px;
-    margin: 35px 20px;
-    padding: 15px;
-    position: relative;
-    top: -20px;
-  }
-
-  .hero-info-description {
-    /* border: 2px solid green; */
-    font-size: small;
-    text-align: center;
-  }
-
-  .gif-container {
-    margin: auto;
-    /* border: 2px solid green; */
-    /* width: auto; */
-    position: relative;
-    top: -50px;
-    /* padding: 0; */
-    /* margin-bottom: 170px; */
-
-    img {
-      width: 200px;
-      /* margin-top: 30px; */
-    }
-  }
-
-  .gnb-div{
-    /* border: 2px solid green; */
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-
-  }
-
-
-
-  .get-started {
-    margin: auto;
-    width: 200px;
-    /* display: flex; */
-    margin-bottom: 30px;
-    position: relative;
-    top: -45px;
-    left: 100px;
+    font-size: smaller;
   }
 }

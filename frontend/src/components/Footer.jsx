@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footer-container">
       {/* <img src={favicon} alt="" /> */}
       <div className="outro">
-        <img src={favicon} alt="" />
+        <img src={favicon} alt=""/>
         <p>
           Get access to best of crypto investment and the tools and confidence
           to start ivesting with cryptocurrencies, faster than you can like

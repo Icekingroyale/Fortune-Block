@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import '../../stylesheets/loggedinstyles/Dashboard.css'
 
 function App() {
   const navigate = useNavigate();
