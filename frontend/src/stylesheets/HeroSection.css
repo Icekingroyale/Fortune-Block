@@ -1,58 +1,75 @@
 
-
 .hero-section-container {
-  line-height: 38px;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    line-height: 38px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .hero-info-wrapper {
-  text-align: center;
-  display: flex;
-  border: 2px solid;
-  border-image: linear-gradient(#dd9104 0%, #7c7c7c 100%) 1;
-  flex-direction: column;
-  margin: 70px 50px;
-  min-width: 200px;
-  flex-basis: 500px;
+    text-align: center;
+    display: flex;
+    /*border: 2px solid;*/
+    border-image: linear-gradient(#dd9104 0%, #7c7c7c 100%) 1;
+    flex-direction: column;
+    margin: 100px 50px;
+    min-width: 200px;
+    flex-basis: 500px;
 
+}
+
+.gnb-div {
+    display: flex;
 }
 
 .gif-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.gif-container img {
-  max-width: 250px;
+.gif-container>img, button{
+    max-width: 250px;
 }
 
-div>.get-started {
-  display: flex;
-  justify-content: center;
-  width: 180px;
-  margin-bottom: 10px;
+div > .get-started {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    margin-bottom: 10px;
 }
 
 .highlighted {
-  background: linear-gradient(#dd9104 0%, #000000 100%);
-  border-radius: 5px;
-  padding: 0 10px;
+    color: goldenrod;
+    border-radius: 5px;
+    padding: 0 10px;
 }
 
-@media (max-width: 850px){
-  .gif-container{
-    margin-top: -50px;
-  }
+@media (max-width: 850px) {
+    .gif-container {
+        margin-top: -100px;
+    }
 }
 
-@media (max-width: 428px){
-  .hero-info-wrapper{
-    font-size: smaller;
-  }
+@media (max-width: 428px) {
+    .hero-info-wrapper {
+        font-size: smaller;
+    }
+}
+
+@media (max-width: 321px) {
+    .hero-section-container{
+        margin-top: -35px;
+    }
+    .hero-info-wrapper {
+        h1{
+        line-height: 25px;
+        }
+        line-height: 25px;
+    }
+    .gif-container>img, button{
+        max-width: 150px;
+    }
 }

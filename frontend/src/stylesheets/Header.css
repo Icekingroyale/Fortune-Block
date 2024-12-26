@@ -116,7 +116,7 @@ button:hover {
   .logo {
     width: 25px;
   }
-  
+
   .menu-links {
     display: none;
   }
@@ -124,7 +124,7 @@ button:hover {
   .wallet-btn {
     display: none;
   }
-  
+
   .menu-icon {
     display: inline-block; /* Show buttons in mobile mode */
     width: 30px;
@@ -134,7 +134,7 @@ button:hover {
   .nav-links.show{
     margin-top: 10px;
     padding-top: 30px;
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
@@ -154,18 +154,25 @@ button:hover {
 
   .close{
     margin: auto 90px;
-    height: 27px;    
+    height: 27px;
   }
 
   .primary{
     margin-top: 150px;
     font-size: smaller;
-  }  
+  }
 
   div.menu-container{
     /* background-color: green; */
   }
+}
 
-
-  
+@media (max-width: 321px){
+    .investor{
+        margin: auto;
+        font-size: medium;
+    }
+    .sign-in{
+        display: none;
+    }
 }
