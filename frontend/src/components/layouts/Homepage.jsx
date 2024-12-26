@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../stylesheets/Homepage.css'
+import '../../stylesheets/layoutstyles/Homepage.css'
 import Header from "../Header";
 import HeroSection from "../HeroSection";
 import Certified from "../Certified";
@@ -21,6 +21,7 @@ import Copyright from "../Copyright";
 const Homepage = () => {
   return (
     <>
+    <div className='homepage'>
       <Header />
       <HeroSection /> 
       <Certified />
@@ -30,6 +31,7 @@ const Homepage = () => {
       <Testimonies />
       <Footer />
       <Copyright />
+    </div>
     </>
   )
 } 

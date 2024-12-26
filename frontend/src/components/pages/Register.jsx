@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../stylesheets/pagestyles/Register.css";
 import countries from "../../data-countries.json"; // Import the JSON file
+import Header from "../Header";
 import Footer from "../Footer";
 import Copyright from "../Copyright";
 import { Link } from "react-router-dom";
@@ -60,8 +61,10 @@ const SignUp = () => {
 
   return (
     <>
+      <Header />
       <div className="signup-container">
-        <form onSubmit={handleSubmit} className="signup-form">
+        <form onSubmit={handleSubmit} className="signup-form"
+        method='POST' >
           <h2>Sign Up</h2>
           <div className="form-group">
             <label>First Name</label>

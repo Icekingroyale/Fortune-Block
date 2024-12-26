@@ -22,7 +22,7 @@ const Testimonies = () => {
           <img src={ivv} alt="" />
           <h4>Julian Styles</h4>
           <p>
-            "Bitcoin doubled in 7 days. You should not expect anything more.
+            "Bitcoin doubled in 7 days. You should not expect anything less.
             Excellent customer service!”
           </p>
         </div>

@@ -1,6 +1,5 @@
 .t-container {
   width: 100%;
-  /* background-image: url(../assets/bg/bg-5.jpg); */
   background-color: #222429;
 
   h2 {
@@ -12,7 +11,7 @@
 
   .tcard-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   .tcards {
@@ -40,7 +39,7 @@
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 580px) {
   .tcard-container {
     display: flex;
     flex-direction: column;

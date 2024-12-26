@@ -13,7 +13,7 @@
 
 /* Media Queries for responsiveness */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 1000px) {
     .card-container{        
         /* border: 2px solid green; */
         display: grid;
@@ -21,6 +21,9 @@
         grid-template-rows: repeat(3, 1fr);
         gap: 0;
         align-items: center;
+        margin: auto 10px;
+        
+        
         
     }
     

@@ -8,7 +8,7 @@ const Footer = () => {
     <div className="footer-container">
       {/* <img src={favicon} alt="" /> */}
       <div className="outro">
-        <img src={favicon} alt="" />
+        <img src={favicon} alt=""/>
         <p>
           Get access to best of crypto investment and the tools and confidence
           to start ivesting with cryptocurrencies, faster than you can like
@@ -20,7 +20,7 @@ const Footer = () => {
         <img src={location} alt="" className="location-img" />
         <div className="location">
           <h4> Head Office </h4>
-          <a href="#">183 Birchpond Road Coram New York, United States</a>
+          <a href="/">183 Birchpond Road Coram New York, United States</a>
         </div>
       </div>
       <hr />
@@ -29,13 +29,13 @@ const Footer = () => {
         <div className="contact-admin">
           <span>Admin</span>
           <h6>
-            <a href="#">admin@fortuneblock.com</a>
+            <a href="/">admin@fortuneblock.com</a>
           </h6>
         </div>
         <div className="contact-support">
           <span>support</span>
           <h6>
-            <a href="#">support@fortuneblock.com</a>
+            <a href="/">support@fortuneblock.com</a>
           </h6>
         </div>
       </div>

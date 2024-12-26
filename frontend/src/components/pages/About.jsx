@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../../stylesheets/pagestyles/About.css";
 import cert from "../../assets/cert.jpg";
 // import bg from '../../assets/bg/about-bg.png'
+import Header from "../Header";
 import Footer from "../Footer";
 import Copyright from "../Copyright";
 
@@ -14,6 +15,8 @@ const About = () => {
   };
 
   return (
+    <>
+      <Header />
     <div className="about-container">
       <div className="abt-hero">
         <h1>About Fortune Block</h1>
@@ -59,6 +62,7 @@ const About = () => {
       <Footer />
       <Copyright />
     </div>
+    </>
   );
 };
 

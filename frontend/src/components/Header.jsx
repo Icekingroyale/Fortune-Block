@@ -1,40 +1,39 @@
-// import React, { useState } from "react";
+import React, { useState } from "react";
 import "../stylesheets/Header.css";
 import favicon from "../assets/favicon.png";
 import { useNavigate, NavLink } from "react-router-dom";
 import open from "../assets/icons/bars-solid.svg";
 import close from "../assets/icons/x-solid.svg";
-// import { useNavigate } from "react-router-dom";
 
-
-
-
-
-
-
-const Header = () => {  
-
-  const navigate = useNavigate()
+const Header = () => {
+  const navigate = useNavigate();
 
   const handleBtnClick = () => {
-    navigate('/register')
-  }
+    navigate("/register");
+  };
 
+  const [isOpen, setIsOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  
+  
 
   return (
-    <div className="header-container">
-      <div className="logo-container">
-        {/* fix the link below to scroll up to the header section
+    <header>
+      <div className="header-container">
+        <div className="logo-container">
+          {/* fix the link below to scroll up to the header section
         instead of refreshing the page */}
-        <a href="./">
-          <img className="logo" src={favicon} alt="" />
-          <h1 className="investor">Fortune Block</h1>
-        </a>
-      </div>
-      <div className="menu">
-        <div className="menu-links">
-          {/* <Navlink to='About' >About Us</Navlink> */}
-          <header>
+          <NavLink to="/">
+            <img className="logo" src={favicon} alt="" />
+            <h1 className="investor">FortuneBlock</h1>
+          </NavLink>
+        </div>
+        <div className="menu">
+          <div className="menu-links">
+            {/* <Navlink to='About' >About Us</Navlink> */}
             <nav>
               <NavLink
                 to="/"
@@ -60,28 +59,51 @@ const Header = () => {
               >
                 Sign In
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to="/register"
                 className={({ isActive }) => (isActive ? "active-link" : "")}
               >
                 Register
-              </NavLink>
-
-              <Navlink to='/dashboard' >
-                Backend
-              </Navlink>
+              </NavLink> */}
             </nav>
-          </header>
+          </div>
+        </div>
+        <div className="wallet-btn">
+          <button className="primary" onClick={handleBtnClick}>
+            REGISTER{" "}
+          </button>
+        </div>
+        <a href="/sign-in" className="sign-in">Sign In</a>
+        <div className="menu-container">
+          {/* Open icon (visible when menu is closed) */}
+          <img
+            src={open}
+            alt="Open menu"
+            className={`menu-icon open ${isOpen ? "hidden" : ""}`}
+            onClick={toggleMenu}
+          />
+
+          {/* Close icon (visible when menu is open) */}
+          <img
+            src={close}
+            alt="Close menu"
+            className={`menu-icon close ${isOpen ? "" : "hidden"}`}
+            onClick={toggleMenu}
+          />
+
+          {/* Nav Links */}
+          <nav className={`nav-links ${isOpen ? "show" : ""}`}>
+            <a href="/">Home</a>
+            <a href="/about-us">About</a>
+            <a href="/contact-us">Contact</a>
+            <a href="/sign-in">Sign In</a>
+            <button className="primary" onClick={handleBtnClick}>
+              REGISTER{" "}
+            </button>
+          </nav>
         </div>
       </div>
-      <div className="wallet-btn">
-        <button className="primary" onClick={handleBtnClick}>REGISTER </button>
-      </div>
-      <div className="hdmenu">
-        <img src={open} alt="" className="qmenu" id="open"   />
-        <img src={close} alt="" className="qmenu" id="close" />
-      </div>
-    </div>
+    </header>
   );
 };
 
