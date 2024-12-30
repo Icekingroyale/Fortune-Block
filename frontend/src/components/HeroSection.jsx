@@ -14,7 +14,7 @@ const HeroSection = () => {
     <div className="hero-section-container" >
       <div className="hero-info-wrapper">
         <h1>
-          WorldClass Crypto <span className="highlighted">Investment</span>{" "}
+          World Class Crypto <span className="highlighted">Investment</span>{" "}
           Services
         </h1>
         <p className="hero-info-description">

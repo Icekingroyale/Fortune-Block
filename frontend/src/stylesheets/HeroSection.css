@@ -5,10 +5,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /*height: 100vh;*/
 }
 
 .hero-info-wrapper {
-    text-align: center;
+    text-align: justify;
     display: flex;
     /*border: 2px solid;*/
     border-image: linear-gradient(#dd9104 0%, #7c7c7c 100%) 1;
@@ -30,7 +31,7 @@
     align-items: center;
 }
 
-.gif-container>img, button{
+.gif-container > img, .get-started {
     max-width: 250px;
 }
 
@@ -56,20 +57,25 @@ div > .get-started {
 @media (max-width: 428px) {
     .hero-info-wrapper {
         font-size: smaller;
+        line-height: 25px;
+    }
+
+    .gif-container > img, .get-started {
+        max-width: 150px;
     }
 }
 
 @media (max-width: 321px) {
-    .hero-section-container{
-        margin-top: -35px;
+    .hero-section-container {
+        margin-top: -40px;
     }
+
     .hero-info-wrapper {
-        h1{
-        line-height: 25px;
+        h1 {
+            line-height: 22px;
+            text-align: center;
         }
-        line-height: 25px;
-    }
-    .gif-container>img, button{
-        max-width: 150px;
+
+        line-height: 20px;
     }
 }

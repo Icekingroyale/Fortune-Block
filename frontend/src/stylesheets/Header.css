@@ -176,3 +176,9 @@ button:hover {
         display: none;
     }
 }
+
+@media (max-width: 230px){
+  .investor{
+    display: none;
+  }
+}

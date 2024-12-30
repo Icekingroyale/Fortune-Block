@@ -1,71 +1,68 @@
-.all{
+.all {
     display: flex;
-    flex-wrap: wrap;
-    align-content: space-evenly;
+    justify-content: center;
+    padding: 10px;
+    /*border: 2px solid red;*/
+
 }
-.plans-container{
+
+
+.plans-container {
     border: 1px solid;
-    width: 250px;
-    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 200px;
     background-color: rgb(15, 15, 15);
-    padding: 24px;
-    
+    padding: 20px;
 
-
-    h6{
+    h6 {
         color: #dd9104;
         opacity: 0.6;
     }
-    
-    
-    h2{
-
+    h2 {
         font-size: x-large;
-        span{
+
+        span {
             font-size: xx-small;
         }
     }
 
-
-    hr{
+    hr {
         opacity: 0.5;
         margin: 10px 0;
     }
 
-    li{
+    li {
         font-size: small;
         line-height: 25px;
-        
+        list-style: none;
+
     }
-    
-    button{
+
+    button {
         background-color: rgb(214, 75, 75);
         margin-top: 10px;
     }
 
-    button:hover{
+    button:hover {
         background-color: black
     }
 
 }
 
-.plans-header{
+.plans-body{
+
+}
+
+.plans-header {
     padding: 10px;
 }
 
-    
- 
+
+
 @media screen and (max-width: 450px) {
-    .plans-container{
-        padding: 0;
-        padding-bottom: 10px;
-        padding-left: 10px;
-        margin: 10px;
-        /* border: 2px solid blue; */
-        width: 150px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .plans-header>h2>span{
+        display: block;
     }
-    
 }
+

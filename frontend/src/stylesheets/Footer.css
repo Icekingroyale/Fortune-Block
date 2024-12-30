@@ -3,13 +3,13 @@
     justify-content: space-around;
     text-align: center;
     background-color: rgb(22, 22, 22);
-    /* color: rgb(173, 173, 173); */
     padding: 20px;
     font-size:small;
     hr{
         opacity: 0.4
     }   
 }
+
 
 .outro{
     display: flex;
@@ -31,23 +31,20 @@
         flex-direction: column;
         justify-content: center;
         line-height: 20px;
-        height: 300px;
         padding: 20px;
-        flex-basis: 200px;
     }
     .outro{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-basis: 0;
     }
-
-
-    .location-img{
-        margin-top: 5px;
+    .footer-container>*{
+        margin: 10px;
+        *{
+            margin: 5px;
+        }
     }
-
 }
 
-@media (min-width: 426px){
-}

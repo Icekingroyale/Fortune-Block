@@ -19,7 +19,7 @@ const Transaction = () => {
                     clock -- no matter who or where you are.
                 </p>
             </div>
-            <img src={assurance} alt=""/>
+            <img src={assurance} alt="gurarantee image"/>
         </div>
     );
 };
