@@ -5,6 +5,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+
     /*height: 100vh;*/
 }
 
@@ -65,17 +67,23 @@ div > .get-started {
     }
 }
 
+@media (max-width: 376px){
+    .hero-section-container{
+        h1 {
+            line-height: 22px;
+            text-align: center;
+        }
+    }
+
+}
+
+
 @media (max-width: 321px) {
     .hero-section-container {
         margin-top: -40px;
     }
 
     .hero-info-wrapper {
-        h1 {
-            line-height: 22px;
-            text-align: center;
-        }
-
         line-height: 20px;
     }
 }

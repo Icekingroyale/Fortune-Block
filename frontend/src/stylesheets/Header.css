@@ -1,13 +1,14 @@
+
+
 .header-container {
+  background-color: black;
   display: flex;
   width: 100%;
-  padding: 10px 20px;
-  padding-bottom: 5px;
-  /* border: 2px solid green;  */
+  padding: 10px 20px 5px 20px;
+  /* border: 2px solid green;*/
   position: fixed;
   z-index: 1000;
   /* backface-visibility: hidden; */
-  background-color: black;
   overflow: hidden;
   font-size: 14px;
 }
@@ -80,11 +81,6 @@ button:hover {
   border-color: #dd9104;
 }
 
-.open,
-.close {
-  /* display: none; */
-  /* border: 2px solid green; */
-}
 
 .active-link {
   color: #dd9104;
@@ -106,7 +102,8 @@ button:hover {
 
   .sign-in{
     display: block;
-    margin: auto 10px;
+    position: absolute;
+    right: 50px;
   }
 
   .logo-container {
@@ -126,36 +123,43 @@ button:hover {
   }
 
   .menu-icon {
-    display: inline-block; /* Show buttons in mobile mode */
+    position: relative;
     width: 30px;
     height: 30px;
   }
 
-  .nav-links.show{
-    margin-top: 10px;
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    right: 230px;
-    gap: 20px;
-    background-color: gray;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1000;
-    font-size: 23px;
-  }
+ .nav-links.show{
+  margin-top: 10px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  right: 230px;
+  gap: 20px;
+  background-color: gray;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1000;
+  font-size: 23px;
+ }
 
 
   .hidden {
     display: none;
   }
 
-  .close{
-    margin: auto 90px;
+  .close,.open{
+    position: absolute;
+    right: 0;
     height: 27px;
+    z-index: 1000;
+    cursor: pointer;
   }
+
+.close{
+    /*display: none;*/
+}
 
   .primary{
     margin-top: 150px;
