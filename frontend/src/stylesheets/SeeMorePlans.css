@@ -1,0 +1,21 @@
+.container {
+    background-color: #222429;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.see-more-btn {
+    margin: 10px auto;
+    border: 2px solid rgb(214, 75, 75);
+    background-color: #222429;
+
+}
+
+
+@media screen and (min-width: 950px) {
+    .container{
+        display: none;
+    }
+}

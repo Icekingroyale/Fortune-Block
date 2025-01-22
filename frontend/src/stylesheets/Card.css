@@ -1,5 +1,5 @@
 .card-container {
-    /*border: 2px solid red;*/
+    border: 2px solid #222429;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, auto);
@@ -7,6 +7,9 @@
     background-color: #222429;
 }
 
+.show-more {
+    display: none;
+}
 
 /* Media Queries for responsiveness */
 
@@ -17,5 +20,4 @@
         grid-template-rows: repeat(3, auto);
         background-color: #222429;
     }
-    
 }

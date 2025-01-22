@@ -23,7 +23,7 @@ const ContactUs = () => {
     });
   };
 
-  const validateForm = () => {
+  const  validateForm = () => {
     let formErrors = {};
 
     if (!formData.firstname.trim()) {
@@ -49,7 +49,8 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
-      console.log("Form submitted", formData);
+      alert("Messege Sent");
+      console.log(formData)
       // Handle form submission logic here
     }
   };
