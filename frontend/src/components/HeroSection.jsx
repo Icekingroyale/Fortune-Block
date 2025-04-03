@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import btcgif2 from "../assets/btcgif2.gif";
 import "../stylesheets/HeroSection.css";
 
@@ -7,7 +7,7 @@ const HeroSection = () => {
   const navigate = useNavigate(); // Initialize the navigate hook
 
   const handleBtnClick = () => {
-    navigate("/register"); // Navigate to the Sign Up page
+    navigate("http://localhost:3000/"); // Navigate to the Sign Up page
   };
 
   return (
@@ -18,12 +18,7 @@ const HeroSection = () => {
           Services
         </h1>
         <p className="hero-info-description">
-          We provide cryptocurrency investment and trading solutions, our
-          platform creates an accessible user-friendly and efficient environment
-          for online trading and investment of crypto. Our revolutionary
-          technology is taking the crypto investment industry by storm,
-          empowering millions across the globe to participate and invest
-          instantly.
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae cum cumque, distinctio nihil porro praesentium quidem! Ad consequuntur corporis, eligendi iure, nihil nulla quam quod saepe tempore tenetur vel voluptas!
         </p>
       </div>
       <div className="gnb-div">

@@ -6,7 +6,7 @@ function App() {
 
     return (
     <div className='dashboard-container'>
-      <h1>This is my PHP backend</h1>
+      <h1>This is my Express backend</h1>
     </div>
   );
 }

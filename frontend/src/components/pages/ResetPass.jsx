@@ -61,9 +61,9 @@ const ResetPassword = () => {
             </p>
           </div>
         </form>
-        <Footer />
-        <Copyright />
       </div>
+      <Footer />
+      <Copyright />
     </>
   );
 };

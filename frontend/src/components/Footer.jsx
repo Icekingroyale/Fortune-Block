@@ -10,9 +10,7 @@ const Footer = () => {
       <div className="outro">
         <img src={favicon} alt=""/>
         <p>
-          Get access to best of crypto investment and the tools and confidence
-          to start ivesting with cryptocurrencies, faster than you can like
-          never before.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus qui nam alias harum dignissimos rem culpa autem corrupti esse! Quae optio ipsam ab esse facilis quis nemo quod vitae quibusdam.
         </p>
       </div>
       <hr />
@@ -20,7 +18,7 @@ const Footer = () => {
         <img src={location} alt="" className="location-img" />
         <div className="location">
           <h4> Head Office </h4>
-          <a href="/">183 Birchpond Road Coram New York, United States</a>
+          <a href="/">042 Mongo-Park Rd, London, United Kingdom</a>
         </div>
       </div>
       <hr />

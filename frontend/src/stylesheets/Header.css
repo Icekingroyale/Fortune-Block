@@ -2,12 +2,13 @@
 .header-container {
   background-color: black;
   display: flex;
+    align-items: center;
   width: 100%;
-  padding: 10px 20px 5px 20px;
-  /* border: 2px solid green;*/
+  padding: 20px 10px;
+   /*border: 2px solid green;*/
   position: fixed;
   z-index: 1000;
-  /* backface-visibility: hidden; */
+   /*backface-visibility: hidden;*/
   overflow: hidden;
   font-size: 14px;
 }
@@ -16,8 +17,8 @@
   display: flex;
   justify-content: center;
   flex: 1;
-  /* border: 2px solid red; */
-  margin: 10px auto;
+   /*border: 2px solid red;*/
+  /*margin: 10px auto;*/
 }
 
 .logo-container {
@@ -54,7 +55,7 @@ a:hover {
 
 .logo {
   width: 45px;
-  /* border: 2px solid red; */
+   /*border: 2px solid red;*/
   transition: 0.5s ease;
 }
 
@@ -121,12 +122,6 @@ button:hover {
     display: none;
   }
 
-  .menu-icon {
-    position: relative;
-    width: 30px;
-    height: 30px;
-  }
-
  .nav-links.show{
   padding-top: 30px;
   display: flex;
@@ -148,26 +143,26 @@ right: 180px;
     display: none;
   }
 
-  .close,.open{
+
+
+  .menu-icon{
     position: absolute;
-    right: 0;
+    right: 5px;
     height: 27px;
     z-index: 1000;
     cursor: pointer;
   }
 
-.close{
-    /*display: none;*/
-}
+  .open{
+    top: 20px;
+
+  }
 
   .primary{
     margin-top: 150px;
     font-size: smaller;
   }
 
-  div.menu-container{
-    /* background-color: green; */
-  }
 }
 
 @media (max-width: 321px){

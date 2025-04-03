@@ -11,10 +11,8 @@
 }
 
 .hero-info-wrapper {
-    text-align: justify;
     display: flex;
     /*border: 2px solid;*/
-    border-image: linear-gradient(#dd9104 0%, #7c7c7c 100%) 1;
     flex-direction: column;
     margin: 100px 50px;
     min-width: 200px;
@@ -60,6 +58,7 @@ div > .get-started {
     .hero-info-wrapper {
         font-size: smaller;
         line-height: 25px;
+        text-align: center;
     }
 
     .gif-container > img, .get-started {
@@ -79,10 +78,6 @@ div > .get-started {
 
 
 @media (max-width: 321px) {
-    .hero-section-container {
-        margin-top: -40px;
-    }
-
     .hero-info-wrapper {
         line-height: 20px;
     }

@@ -14,24 +14,21 @@ const Testimonies = () => {
           <img src={iv} alt="" />
           <h4>Ryan McCormick</h4>
           <p>
-            "This is a realistic program for anyone looking for site to invest.
-            Paid to me regularly, keep up good work!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsa temporibus repudiandae, corrupti provident dolores in ipsam, assumenda iure consectetur exercitationem, mollitia ratione!
           </p>{" "}
         </div>
         <div className="tcards">
           <img src={ivv} alt="" />
           <h4>Julian Styles</h4>
           <p>
-            "Bitcoin doubled in 7 days. You should not expect anything less.
-            Excellent customer service!”
-          </p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, reiciendis! Odit quasi numquam quisquam laboriosam natus ea ut alias eaque
+           </p>
         </div>
         <div className="tcards">
           <img src={ivvv} alt="" />
           <h4>Logan Russell</h4>
           <p>
-            "I have decided to use Freeinvestment for Bitcoin packages because
-            all other investment companies don't provide the same level of packages and service. Highly recommend it."
+           Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio dolor deserunt voluptatibus omnis ducimus quasi eveniet magnam quas? Dolorum fugiat error
           </p>
         </div>
       </section>

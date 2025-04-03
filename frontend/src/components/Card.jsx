@@ -20,7 +20,10 @@ const Card = () => {
     }
   }, []);
 
-  const popularPlans = data.slice(0, 4);
+// 08-02-2025
+// TODO - show complete cards on md-screen and above and show only 3 in a single line on sm-screens
+
+  const popularPlans = data.slice(0, 3);
 
   return (
     <>
