@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../stylesheets/pagestyles/contact.css";
+import "/src/stylesheets/pagestyles/contact.css";
 import Header from "../Header";
 import Footer from "../Footer";
 import Copyright from "../Copyright";
