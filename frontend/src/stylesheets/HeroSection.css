@@ -6,8 +6,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
-    /*height: 100vh;*/
+    /* border: 2px solid red; */
+    /* min-height: 100vh; */
 }
 
 .hero-info-wrapper {
@@ -48,6 +48,21 @@ div > .get-started {
     padding: 0 10px;
 }
 
+
+/* h-screen for lg screens */
+@media (min-width: 1024px) {
+    .hero-section-container{
+        min-height: 100vh;
+    }    
+}
+
+@media (min-width: 320px) and (max-width: 428px) {
+    .hero-section-container{
+        min-height: 100vh;
+    }
+}
+
+
 @media (max-width: 850px) {
     .gif-container {
         margin-top: -100px;
@@ -57,7 +72,7 @@ div > .get-started {
 @media (max-width: 428px) {
     .hero-info-wrapper {
         font-size: smaller;
-        line-height: 25px;
+        line-height: 45px;
         text-align: center;
     }
 
@@ -81,4 +96,5 @@ div > .get-started {
     .hero-info-wrapper {
         line-height: 20px;
     }
+
 }
