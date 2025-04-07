@@ -6,6 +6,7 @@ import cert from "../../assets/cert.jpg";
 import Header from "../Header";
 import Footer from "../Footer";
 import Copyright from "../Copyright";
+import ScrollAnimation from "../animations/ScrollAnimation";
 
 const About = () => {
   const navigate = useNavigate();
@@ -17,7 +18,9 @@ const About = () => {
   return (
     <>
       <Header />
+      <ScrollAnimation>
     <div className="about-container">
+
       <div className="abt-hero">
         <h1>About Fortune Block</h1>
       </div>
@@ -45,6 +48,7 @@ const About = () => {
       <Footer />
       <Copyright />
     </div>
+      </ScrollAnimation>
     </>
   );
 };

@@ -7,7 +7,6 @@ import {
   createRoutesFromElements,
   RouterProvider,
 } from "react-router-dom";
-import AOS from "aos";
 import Homepage from "./components/layouts/Homepage";
 import MainLayout from "./components/layouts/MainLayout";
 import About from "./components/pages/About";

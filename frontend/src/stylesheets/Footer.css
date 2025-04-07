@@ -16,10 +16,19 @@
     align-items: center;
     flex-direction: column;
     flex-basis: 200px;
+
+    img{
+        height: 20px;
+        width: 20px;
+    }
 }
 
 
 .footer-container>div>img{
+    height: 20px;
+    width: 20px;
+}
+.location-img{
     height: 20px;
     width: 20px;
 }

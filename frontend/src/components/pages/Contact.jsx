@@ -3,6 +3,7 @@ import "/src/stylesheets/pagestyles/contact.css";
 import Header from "../Header";
 import Footer from "../Footer";
 import Copyright from "../Copyright";
+import ScrollAnimation from "../animations/ScrollAnimation";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -58,6 +59,8 @@ const ContactUs = () => {
   return (
     <>
     <Header/>
+    <ScrollAnimation>
+
       <div className="contact-container">
         <h2>Contact Us</h2>
         <form onSubmit={handleSubmit} className="contact-form">
@@ -69,7 +72,7 @@ const ContactUs = () => {
               name="firstname"
               value={formData.firstname}
               onChange={handleChange}
-            />
+              />
             {errors.firstname && <p className="error">{errors.firstname}</p>}
           </div>
 
@@ -81,7 +84,7 @@ const ContactUs = () => {
               name="lastname"
               value={formData.lastname}
               onChange={handleChange}
-            />
+              />
             {errors.lastname && <p className="error">{errors.lastname}</p>}
           </div>
 
@@ -93,7 +96,7 @@ const ContactUs = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-            />
+              />
             {errors.email && <p className="error">{errors.email}</p>}
           </div>
 
@@ -105,7 +108,7 @@ const ContactUs = () => {
               name="subject"
               value={formData.subject}
               onChange={handleChange}
-            />
+              />
             {errors.subject && <p className="error">{errors.subject}</p>}
           </div>
 
@@ -127,6 +130,7 @@ const ContactUs = () => {
       </div>
         <Footer />
         <Copyright />
+              </ScrollAnimation>
     </>
   );
 };

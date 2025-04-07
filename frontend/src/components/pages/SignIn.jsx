@@ -6,6 +6,7 @@ import Copyright from "../Copyright";
 import Guarantee from '../Guarantee'
 import Header from "../Header";
 import Dashboard from "../layouts/Dashboard"
+import ScrollAnimation from "../animations/ScrollAnimation";
 
 const SignIn = () => {
   const [formData, setFormData] = useState({
@@ -49,68 +50,71 @@ const SignIn = () => {
     }
   };
 
-  if (isLoggedIn){
+  if (isLoggedIn) {
     return <Dashboard />
   }
 
   return (
     <>
-    <Header />
-      <div className="signin-container">
-        <form onSubmit={handleSubmit} className="signin-form">
-          <h2>Sign In</h2>
+      <Header />
+      <ScrollAnimation>
 
-          <div className="form-group">
-            <label>Email</label>
-            <input
-              placeholder="E-mail"
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-            />
-            {errors.email && <p className="error">{errors.email}</p>}
-          </div>
+        <div className="signin-container">
+          <form onSubmit={handleSubmit} className="signin-form">
+            <h2>Sign In</h2>
 
-          <div className="form-group">
-            <label>Password</label>
-            <input
-              placeholder="Password"
-              type="password"
-              name="password"
-              value={formData.password}
-              onChange={handleChange}
-            />
-            {errors.password && <p className="error">{errors.password}</p>}
-          </div>
-
-          <div className="form-group-checkbox-group">
-            <label>
+            <div className="form-group">
+              <label>Email</label>
               <input
-                type="checkbox"
-                name="rememberMe"
-                checked={formData.rememberMe}
+                placeholder="E-mail"
+                type="email"
+                name="email"
+                value={formData.email}
                 onChange={handleChange}
               />
-              Remember Me
-            </label>
-            <Link to="/forgot-password" className="forgot-password-link">
-              Forgot Password?
-            </Link>
-          </div>
+              {errors.email && <p className="error">{errors.email}</p>}
+            </div>
 
-          <button type="submit" className="signin-btn">
-            Login
-          </button>
+            <div className="form-group">
+              <label>Password</label>
+              <input
+                placeholder="Password"
+                type="password"
+                name="password"
+                value={formData.password}
+                onChange={handleChange}
+              />
+              {errors.password && <p className="error">{errors.password}</p>}
+            </div>
 
-          <p className="signup-prompt">
-            Don't have an account? <Link to="/register">Sign Up</Link>
-          </p>
-        </form>
-      </div>
-      <Guarantee />
-      <Footer />
-      <Copyright />
+            <div className="form-group-checkbox-group">
+              <label>
+                <input
+                  type="checkbox"
+                  name="rememberMe"
+                  checked={formData.rememberMe}
+                  onChange={handleChange}
+                />
+                Remember Me
+              </label>
+              <Link to="/forgot-password" className="forgot-password-link">
+                Forgot Password?
+              </Link>
+            </div>
+
+            <button type="submit" className="signin-btn">
+              Login
+            </button>
+
+            <p className="signup-prompt">
+              Don't have an account? <Link to="/register">Sign Up</Link>
+            </p>
+          </form>
+        </div>
+        <Guarantee />
+        <Footer />
+        <Copyright />
+      </ScrollAnimation>
     </>
   );
 };
